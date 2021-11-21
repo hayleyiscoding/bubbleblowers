@@ -264,8 +264,8 @@ body {
   border: 1px solid black;
 }
 .btn:hover {
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
-  opacity: 0.8;
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.3);
+  /* opacity: 0.8; */
   color: #ffffff !important;
 }
 .btn-primary:hover {
@@ -278,7 +278,7 @@ body {
 }
 
 /* Nav and General Links Hover */
-a:hover {
+nav a:hover {
   color: black;
   text-decoration: underline;
   text-decoration-style: solid;
@@ -318,8 +318,8 @@ a:hover {
   clear: both;
 }
 
- /* Headings and Text */
- h1 {
+/* Headings and Text */
+h1 {
   font-size: 2.5rem;
   margin-bottom: 1rem;
   font-weight: 600;
@@ -427,7 +427,6 @@ blockquote strong {
 
 /* Classes */
 .classes {
-  
   padding: 3rem 1rem;
 }
 i {
@@ -471,20 +470,19 @@ i {
   background-color: var(--yellow);
   border-radius: 50%;
 }
-.kids-2 img{
+.kids-2 img {
   border-radius: 50%;
   width: 100%;
   object-fit: cover;
 }
 .parent {
-  
   display: flex;
   justify-content: center;
   align-items: center;
   border-radius: 50%;
   background-color: var(--yellow);
 }
-.parent img{
+.parent img {
   border-radius: 50%;
   width: 100%;
   object-fit: cover;
@@ -511,8 +509,8 @@ h5 strong {
 }
 .instructor img {
   /* border-radius: 50%; */
-    width: 100%;
-    object-fit: cover;
+  width: 100%;
+  object-fit: cover;
 }
 .instructor-text {
   padding: 4rem;
@@ -539,12 +537,14 @@ h5 strong {
 
 /* What Our Clients Say */
 .testimonials {
-  background-color: var(--green);
+  background: var(--green) url('../img/water.jpg') no-repeat center/cover;
   margin-bottom: 4rem;
+  border-radius: 5px;
 }
 .testimonials h5 {
   padding: 0;
   color: white;
+  background-color: var(--pink);
 }
 .testimonials h3 {
   padding: 2rem;
@@ -575,12 +575,12 @@ h5 strong {
 
 /* Happy babies*/
 .know {
-  background-color:var(--pink);
+  background-color: var(--pink);
 }
 .know img {
   border-radius: 50%;
-    width: 100%;
-    object-fit: cover;
+  width: 100%;
+  object-fit: cover;
 }
 
 /* Did you know */
@@ -589,10 +589,9 @@ h5 strong {
 }
 .know2 img {
   border-radius: 60%;
-    width: 100%;
-    object-fit: cover;
-    padding: 1rem;
-  
+  width: 100%;
+  object-fit: cover;
+  padding: 1rem;
 }
 
 /* Final Section - See you in the pool*/
@@ -606,7 +605,7 @@ h5 strong {
 .final h6 {
   text-decoration: underline;
   margin-top: 2rem;
-  font-size: 0.7rem;
+  font-size: 0.9rem;
 }
 .last {
   background-color: var(--pink);
@@ -880,7 +879,7 @@ body {
   display: block;
 }
 .mobile-none {
-  display:block;
+  display: block;
 }
 .mobile-show {
   display: none;
@@ -912,10 +911,10 @@ body {
     padding-right: 0;
   }
   .flex-23 {
-    margin-bottom: 4rem ;
+    margin-bottom: 4rem;
   }
   .special-needs {
-    margin-bottom: 1rem!important;
+    margin-bottom: 1rem !important;
   }
   .classes {
     padding-bottom: 0;
@@ -990,21 +989,17 @@ body {
     display: none;
   }
   .kids-2 {
-   
     text-align: center;
-    
   }
   .kids-2 img {
-   object-fit: cover;
+    object-fit: cover;
   }
   .kids-1 {
     text-align: center;
   }
   .kids-4 {
-    
   }
   .know2 {
-    
   }
   .kids-3,
   .kids-1 {
@@ -1012,7 +1007,6 @@ body {
     text-align: center;
   }
   .know-text {
-    
   }
 
   /* Wifi */
@@ -1027,7 +1021,6 @@ body {
 
   /* Instructor */
   .instructor-pic {
-   
   }
   .instructor-text {
     padding: 0;
@@ -1124,19 +1117,20 @@ body {
     padding-top: 5rem;
   }
   .mobile-none {
-    display:none;
+    display: none;
   }
   .mobile-show {
     display: block;
   }
 }
 
+/* Ipad */
 @media only screen and (min-width: 767px) and (max-width: 956px) {
   html {
     font-size: 13px;
   }
   iframe {
-    width: 300px;
+    max-width: 300px
   }
   .soft,
   .nurturing,
@@ -1144,7 +1138,15 @@ body {
   .child-led {
     margin-bottom: 1rem;
     width: 100%;
-    border-radius: 10px;
+  }
+}
+
+/* Ipad pro */
+@media only screen and (min-width: 956px) and (max-width: 1025px) {
+  iframe {
+    max-width: 400px;
   }
 
 }
+
+
