@@ -928,6 +928,9 @@ body {
     margin: 0;
     padding: 0;
   }
+  nav {
+    padding-top: 2rem;
+  }
 
   /* Hero */
   .hero-1 {
