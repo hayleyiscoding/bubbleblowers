@@ -19,33 +19,21 @@
       crossorigin="anonymous"
     ></script>
     <!-- Favicon -->
-    <link rel="icon" type="image/x-icon" href="./img/favicon.png">
+    <link rel="icon" type="image/x-icon" href="./img/favicon.png" />
     <!-- Bubbles JQuery -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <title>Bubble Blowers Swim School</title>
   </head>
   <body>
-    <header>
-      <div class="container flex justify-between header">
-        <a href="#"><img class="logo" src="./img/bubble.jpeg" alt="logo" /></a>
-        <nav>
-          <input type="checkbox" id="checkbox" />
-          <label for="checkbox" id="icon">
-            <svg
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M4 6h16M4 12h16M4 18h16"
-              ></path>
-            </svg>
-          </label>
-          <ul>
+    <!-- Header Desktop -->
+    <header class="desktop">
+      <div class="container">
+        <nav class="flex justify-between header align-center">
+          <a href="#">
+            <img class="logo" src="./img/bubble.jpeg" alt="logo" />
+          </a>
+
+          <ul class="flex">
             <li><a href="#classes">Classes</a></li>
             <li><a href="#instructor">Instructor</a></li>
             <li><a href="#gallery">Gallery</a></li>
@@ -69,6 +57,52 @@
         </nav>
       </div>
     </header>
+    <!-- Header Mobile -->
+    <header class="mobile">
+      <div class="container">
+        <nav class="header align-center">
+          <div class="flex justify-between align-center header-top">
+            <a href="#">
+              <img class="logo" src="./img/bubble.jpeg" alt="logo" />
+            </a>
+            <button class="hamburger" id="hamburger">
+              <i class="fas fa-bars"></i>
+            </button>
+          </div>
+          <div class="nav-list">
+            <div class="flex justify-between align-center header-top">
+              <a href="#">
+                <img class="logo" src="./img/bubble.jpeg" alt="logo" />
+              </a>
+              <button class="cross" id="hamburger">
+                <i class="fas fa-times"></i>
+              </button>
+            </div>
+            <ul class="nav-ul flex column" id="nav-ul">
+              <li><a href="#classes">Classes</a></li>
+              <li><a href="#instructor">Instructor</a></li>
+              <li><a href="#gallery">Gallery</a></li>
+              <li><a href="#clients">Client Happiness</a></li>
+              <li><a href="#contact">Contact</a></li>
+              <li>
+                <a
+                  href="https://www.facebook.com/bubbleblowersswimschool"
+                  target="_blank"
+                  ><i class="fab fa-facebook"></i
+                ></a>
+              </li>
+              <li>
+                <a
+                  href="https://www.instagram.com/bubbleblowersswimschool/"
+                  target="_blank"
+                  ><i class="fab fa-instagram"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
     <main>
       <!-- Hero -->
       <div class="container hero flex padding">
@@ -77,16 +111,19 @@
           <h2>For everyone who loves to swim</h2>
           <h1 class="wrap">
             <span class="bubble">Bubble</span
-            ><span class="blowers">&nbsp;Blowers</span
-          
-            ><br><span class="swim-school">Swim School</span>
+            ><span class="blowers">&nbsp;Blowers</span><br /><span
+              class="swim-school"
+              >Swim School</span
+            >
           </h1>
           <h3>
             Swimming lessons for all ages and abilities in Pine Street,
             Pietermaritzburg. Parent and Baby swimming classes, Learn to swim,
             Adult swimming lessons and special needs swimming.
           </h3>
-          <a href="https://api.whatsapp.com/send?phone=27817254483" class="btn">Let's Swim!</a>
+          <a href="https://api.whatsapp.com/send?phone=27817254483" class="btn"
+            >Let's Swim!</a
+          >
           <p>** Rated 5 ⭐️'s on Facebook!</p>
         </div>
         <!-- Hero Column 2 -->
@@ -94,7 +131,9 @@
       </div>
       <!-- Happiness -->
       <div class="container padding text-center happiness">
-        <h5 class="happy-babies-2">We measure our classes in smiles and happiness!</h5>
+        <h5 class="happy-babies-2">
+          We measure our classes in smiles and happiness!
+        </h5>
         <div class="container flex center">
           <div class="soft flex-25"><h6>Soft-Spoken</h6></div>
           <div class="nurturing flex-25"><h6>Nurturing</h6></div>
@@ -115,7 +154,9 @@
           <br />
           ~ Nontokozo K.<br />
           <br />
-          <a href="https://api.whatsapp.com/send?phone=27817254483" class="btn">Let's Start Swimming!</a>
+          <a href="https://api.whatsapp.com/send?phone=27817254483" class="btn"
+            >Let's Start Swimming!</a
+          >
         </blockquote>
         <div class="ag-format-container">
           <div class="js-bubbles ag-bubbles"></div>
@@ -124,7 +165,7 @@
 
       <!-- Classes -->
       <div
-        class="container padding flex wrap justify-between classes"
+        class="container padding flex justify-between classes"
         id="classes"
       >
         <div class="flex-23 flex column center">
@@ -139,7 +180,7 @@
           <i class="fas fa-user"></i>
           <h4>Adult Classes</h4>
         </div>
-        <div class="flex-23 flex column center">
+        <div class="flex-23 flex column center special-needs">
           <i class="fas fa-heart"></i>
           <h4>Special Needs Classes</h4>
         </div>
@@ -148,6 +189,7 @@
       <!-- Kids Classes -->
       <article>
         <div class="container flex padding kids">
+          <div class="flex-48 kids-2 mobile-show"><img src="../bubbleblowers/img/1.png" alt="Instructor with baby in the pool"></div>
           <div class="flex-48 kids-1 kids-4">
             <h5><strong>Introduce your little ones</strong> to the water</h5>
             <p>
@@ -159,15 +201,19 @@
               animi velit molestias cumque? Quia aliquam, quos repellendus unde
               officiis aut dolorem debitis culpa! Animi, qui.
             </p>
-            <a href="https://api.whatsapp.com/send?phone=27817254483" class="btn">Let's Swim!</a>
+            <a
+              href="https://api.whatsapp.com/send?phone=27817254483"
+              class="btn"
+              >Let's Swim!</a
+            >
           </div>
-          <div class="flex-48 kids-2"></div>
+          <div class="flex-48 kids-2 mobile-none"><img src="../bubbleblowers/img/1.png" alt="Instructor with baby in the pool"></div>
         </div>
       </article>
       <!-- Parent Classes -->
       <article>
         <div class="container flex padding kids">
-          <div class="flex-48 parent"></div>
+          <div class="flex-48 parent"><img src="../bubbleblowers/img/2.png" alt="Two adults in the pool learning to swim"></div>
           <div class="flex-48 kids-3">
             <h5><strong>Adult Classes</strong> for mums and dads</h5>
             <p>
@@ -179,7 +225,11 @@
               animi velit molestias cumque? Quia aliquam, quos repellendus unde
               officiis aut dolorem debitis culpa! Animi, qui.
             </p>
-            <a href="https://api.whatsapp.com/send?phone=27817254483" class="btn">Let's Swim!</a>
+            <a
+              href="https://api.whatsapp.com/send?phone=27817254483"
+              class="btn"
+              >Let's Swim!</a
+            >
           </div>
         </div>
       </article>
@@ -193,7 +243,7 @@
       <div class="container padding" id="instructor">
         <h5 class="text-center">Meet Your Instructor</h5>
         <div class="container flex instructor">
-          <div class="flex-48 instructor-pic"></div>
+          <div class="flex-48 instructor-pic"><img src="../bubbleblowers/img/bubble11 edited.jpeg" alt="Instructor with pink background holding child"></div>
           <div class="flex-48 instructor-text">
             I really love what I do. There are many good swim coaches in PMB and
             I am grateful for the people who choose me and believe in me. I run
@@ -210,7 +260,12 @@
             Swim School.
             <br /><br />
             Contact us if you would like to join our swimming family.
-            <a href="https://api.whatsapp.com/send?phone=27817254483" class="btn">Let's Swim!</a>
+            <div><a
+              href="https://api.whatsapp.com/send?phone=27817254483"
+              class="btn"
+              >Let's Swim!</a
+            ></div>
+            
           </div>
         </div>
       </div>
@@ -306,12 +361,16 @@
         <div class="flex-30"><img src="./img/gallery4.jpeg" alt="" /></div>
         <div class="flex-30"><img src="./img/gallery5.jpeg" alt="" /></div>
         <div class="flex-30"><img src="./img/gallery6.jpeg" alt="" /></div>
-        <a href="https://api.whatsapp.com/send?phone=27817254483" class="btn">Let's Swim!</a>
+      </div>
+      <div class="container gallery-button" style="text-align: center">
+      <a href="https://api.whatsapp.com/send?phone=27817254483" class="btn"
+          >Let's Swim!</a
+        >
       </div>
       <!-- Baby smiles -->
       <article>
         <div class="container flex padding kids">
-          <div class="flex-48 parent know"></div>
+          <div class="flex-48 parent know"><img src="../bubbleblowers/img/3.png" alt="Mother with baby in the pool"></div>
           <div class="flex-48 kids-1">
             <h5>Swim smiles are so important!</h5>
             <p>
@@ -340,6 +399,7 @@
       <!-- Did you know -->
       <article>
         <div class="container flex padding kids">
+          <div class="flex-48 know2 parent mobile-show"><img src="../bubbleblowers/img/4.png" alt="Two children learning to swim"></div>
           <div class="flex-48 know-text kids-3">
             <h5>Did you know?</h5>
             <p>
@@ -353,16 +413,17 @@
             </p>
             <a href="#" class="btn">Let's Swim!</a>
           </div>
-          <div class="flex-48 know2 parent"></div>
+          <div class="flex-48 know2 parent mobile-none"><img src="../bubbleblowers/img/4.png" alt="Two children learning to swim"></div>
         </div>
       </article>
       <!-- See you in the pool -->
       <div class="container padding final text-center">
         <div class="last">
           <h5 class="text-center">
-            We look forward to welcoming you to the Bubble Blowers family
+            We look forward to welcoming you to the Bubble Blowers family :)
           </h5>
-          <a href="https://api.whatsapp.com/send?phone=27817254483" class="btn">Let's Start Swimming!</a
+          <a href="https://api.whatsapp.com/send?phone=27817254483" class="btn"
+            >Let's Start Swimming!</a
           ><a href="https://fb.watch/97m1CviTvy/" target="_blank"
             ><h6>
               Psst! Watch this awesome video that one of our happy swimmers
@@ -393,7 +454,10 @@
 
             <li><i class="fas fa-envelope"></i> sallywilk66 (at) gmail.com</li>
 
-            <li><i class="fas fa-phone"></i><a class="phone" href="tel:0817254483"> 081 725 44831</a></li>
+            <li>
+              <i class="fas fa-phone"></i
+              ><a class="phone" href="tel:0817254483"> 081 725 44831</a>
+            </li>
           </ul>
         </div>
       </div>

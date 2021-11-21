@@ -291,14 +291,6 @@ a:hover {
   width: 100%;
 }
 
-/* Headings*/
-.heading {
-  margin-bottom: 2rem;
-}
-.heading-secondary {
-  font-size: 2.2rem;
-}
-
 /* Text */
 .text-center {
   text-align: center;
@@ -326,77 +318,8 @@ a:hover {
   clear: both;
 }
 
-/* 
-1)Common Tags that I forget:
-<nav>
-<fieldset>
-<figure>
-<article>
-<aside>
-
-2) Use max-width, max-height for images and tables
-
-3) Add viewport meta tag to HTML
-
-4) Code in 'rem'
- */
-
-/* Main Navigation */
-
-header {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-  font-family: "Sniglet", serif;
-  padding-left: 3rem;
-  padding-right: 3rem;
-}
-header li {
-  margin-left: 2rem;
-}
-header i {
-  font-size: 1rem;
-  color: black;
-}
-
-header a {
-  color: black;
-}
-
-.logo {
-  width: 100px;
-}
-nav {
-  padding-top: 2rem;
-}
-/* Hero  */
-
-.hero {
-  padding-left: 3rem;
-  padding-right: 3rem;
-  padding-top: 0;
-  padding-bottom: 0;
-}
-.bubble {
-  color: var(--green);
-}
-.blowers {
-  color: var(--blue);
-}
-.swim-school {
-  color: var(--pink);
-}
-
-.hero-1 {
-  padding-top: 6rem;
-  padding-bottom: 6rem;
-}
-
-.hero-2 {
-  background: url("../img/herocircleimg.jpeg") no-repeat center/contain;
-  margin-left: 5rem;
-}
-
-h1 {
+ /* Headings and Text */
+ h1 {
   font-size: 2.5rem;
   margin-bottom: 1rem;
   font-weight: 600;
@@ -408,12 +331,10 @@ h2 {
   font-style: 200;
   margin-bottom: 1rem;
 }
-
 h3 {
   font-family: "Quicksand", sans-serif;
   padding-right: 3rem;
 }
-
 h4 {
   text-align: center;
   padding-top: 1rem;
@@ -436,13 +357,62 @@ p {
   margin-top: 1rem;
 }
 
-/* blockquote */
+/* Main Navigation */
+header {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+header li {
+  margin-left: 2rem;
+}
+header i {
+  font-size: 1rem;
+  color: black;
+}
+header a {
+  color: black;
+}
+.logo {
+  width: 100px;
+}
+nav {
+  padding-top: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+}
 
+/* Hero  */
+.hero {
+  padding-left: 3rem;
+  padding-right: 3rem;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+.bubble {
+  color: var(--green);
+}
+.blowers {
+  color: var(--blue);
+}
+.swim-school {
+  color: var(--pink);
+}
+.hero-1 {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+}
+.hero-2 {
+  background: url("../img/herocircleimg.jpeg") no-repeat center/contain;
+  margin-left: 5rem;
+}
+
+/* Blockquote */
 blockquote {
   font-size: 1.5rem;
   font-family: "Quicksand", sans-serif;
   color: white;
-
   margin-top: 1rem;
   border-radius: 10px;
   padding: 8rem 16rem;
@@ -450,18 +420,15 @@ blockquote {
   background: var(--yellow) url("../img/quotebackground.jpeg") no-repeat
     center/cover;
 }
-
 blockquote strong {
   color: var(--yellow);
   font-weight: 500;
 }
 
 /* Classes */
-
 .classes {
-  margin-left: 4rem;
-  margin-right: 4rem;
-  padding: 3rem 0rem;
+  
+  padding: 3rem 1rem;
 }
 i {
   font-size: 7rem;
@@ -470,7 +437,6 @@ i {
 }
 
 /* Wifi Quote */
-
 .wifi blockquote {
   background: rgb(56, 179, 187);
   background: radial-gradient(
@@ -483,8 +449,8 @@ i {
   padding-top: 4rem;
   padding-bottom: 4rem;
 }
-/* Kids Classes */
 
+/* Kids Classes */
 .kids {
   padding-left: 3rem;
   padding-right: 3rem;
@@ -501,37 +467,38 @@ i {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: var(--yellow) url("../img/bubble4\ edited.png") no-repeat
-    center/cover;
+
+  background-color: var(--yellow);
   border-radius: 50%;
-  box-shadow: 10px 10px 28px 0px rgba(128, 128, 128, 0.75);
-  -webkit-box-shadow: 10px 10px 28px 0px rgba(128, 128, 128, 0.75);
-  -moz-box-shadow: 10px 10px 28px 0px rgba(128, 128, 128, 0.75);
 }
-
+.kids-2 img{
+  border-radius: 50%;
+  width: 100%;
+  object-fit: cover;
+}
 .parent {
-  background: var(--yellow) url("../img/bubble5\ edited.png") no-repeat bottom
-    left/cover;
-
+  
   display: flex;
   justify-content: center;
   align-items: center;
   border-radius: 50%;
-  box-shadow: 10px 10px 28px 0px rgba(128, 128, 128, 0.75);
-  -webkit-box-shadow: 10px 10px 28px 0px rgba(128, 128, 128, 0.75);
-  -moz-box-shadow: 10px 10px 28px 0px rgba(128, 128, 128, 0.75);
+  background-color: var(--yellow);
 }
-
+.parent img{
+  border-radius: 50%;
+  width: 100%;
+  object-fit: cover;
+}
 .kids-3 {
   padding: 1rem 4rem;
 }
-
 hr {
   width: 70%;
 }
 h5 strong {
   color: var(--pink);
 }
+
 /* Meet Your Instructor */
 .instructor {
   margin-bottom: 4rem;
@@ -540,8 +507,12 @@ h5 strong {
   margin-top: 3rem;
 }
 .instructor-pic {
-  background: url("../img/bubble11\ edited.jpeg") no-repeat center/contain;
   padding: 2rem;
+}
+.instructor img {
+  /* border-radius: 50%; */
+    width: 100%;
+    object-fit: cover;
 }
 .instructor-text {
   padding: 4rem;
@@ -578,9 +549,8 @@ h5 strong {
 .testimonials h3 {
   padding: 2rem;
 }
-
 .bivasha {
-  border: 10px solid var(--yellow);
+  border: 8px solid var(--pink);
   color: black;
   padding: 5rem;
   text-align: center;
@@ -590,12 +560,11 @@ h5 strong {
 }
 
 /* Gallery */
-
 .flex-30 img {
   width: 300px;
   height: 300px;
   object-fit: cover;
-  padding-top: 1rem;
+  padding: 1rem;
   border-radius: 20%;
 }
 .gallery {
@@ -606,18 +575,27 @@ h5 strong {
 
 /* Happy babies*/
 .know {
-  background: var(--pink) url("../img/bubble8\ edited.png") no-repeat
-    center/cover;
+  background-color:var(--pink);
+}
+.know img {
+  border-radius: 50%;
+    width: 100%;
+    object-fit: cover;
 }
 
 /* Did you know */
 .know2 {
-  background: var(--green) url("../img/bbuble\ 3\ background\ removed.png")
-    no-repeat top right/cover;
+  background-color: var(--green);
+}
+.know2 img {
+  border-radius: 60%;
+    width: 100%;
+    object-fit: cover;
+    padding: 1rem;
+  
 }
 
-/* See you in the pool */
-
+/* Final Section - See you in the pool*/
 .final {
   background-color: var(--yellow);
   color: black;
@@ -625,7 +603,6 @@ h5 strong {
   border-radius: 30%;
   margin-bottom: 3rem;
 }
-
 .final h6 {
   text-decoration: underline;
   margin-top: 2rem;
@@ -642,8 +619,7 @@ h5 strong {
   width: 100%;
 }
 
-/* footer */
-
+/* Footer */
 footer {
   margin-top: 4rem;
   background-color: black;
@@ -655,7 +631,6 @@ footer li {
 footer ul {
   padding-top: 1rem;
 }
-
 .flex-40 {
   padding: 2rem;
 }
@@ -664,11 +639,16 @@ footer ul {
   margin-right: 1rem;
 }
 iframe {
-  padding: 1rem 3rem;
+  padding: 1rem 1rem;
+}
+.phone {
+  color: white;
+}
+.phone:hover {
+  color: var(--blue);
 }
 
 /* Bubbles */
-
 body {
   background-color: white;
 }
@@ -880,16 +860,34 @@ body {
   }
 }
 
-/* Phone */
-.phone {
+/* Hamburger Menu */
+.hamburger,
+.cross {
+  background-color: var(--pink);
   color: white;
+  padding: 0.8rem;
+  cursor: pointer;
 }
-.phone:hover {
-  color: var(--blue);
+.hamburger i,
+.cross i {
+  color: white;
+  font-size: 2.5rem;
+}
+.mobile {
+  display: none;
+}
+.desktop {
+  display: block;
+}
+.mobile-none {
+  display:block;
+}
+.mobile-show {
+  display: none;
 }
 
-@media only screen and (max-width: 768px) {
-  /* For mobile phones: */
+/* For mobile phones: */
+@media only screen and (max-width: 767px) {
   html {
     font-size: 12px;
   }
@@ -905,22 +903,31 @@ body {
   .flex {
     flex-wrap: wrap;
   }
-  iframe {
-    display: none;
-  }
-/* Header */
-.fab {
-  font-size: 2rem!important;
-}
-  .flex-40 {
-    margin: 0;
-    padding: 0;
-  }
+
+  /* Headings and Text*/
   h1 {
     font-size: 3rem;
   }
   h3 {
     padding-right: 0;
+  }
+  .flex-23 {
+    margin-bottom: 4rem ;
+  }
+  .special-needs {
+    margin-bottom: 1rem!important;
+  }
+  .classes {
+    padding-bottom: 0;
+  }
+
+  /* Header */
+  .fab {
+    font-size: 2rem !important;
+  }
+  .flex-40 {
+    margin: 0;
+    padding: 0;
   }
 
   /* Hero */
@@ -940,7 +947,7 @@ body {
   .loving,
   .child-led {
     margin-bottom: 1rem;
-    max-width: 200px;
+    width: 100%;
     border-radius: 10px;
   }
   .happy-babies {
@@ -948,6 +955,8 @@ body {
   }
   .happy-babies-2 {
     margin-bottom: 3rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
   }
   blockquote {
     background: var(--pink);
@@ -962,43 +971,40 @@ body {
   blockquote .btn {
     margin-top: 0rem;
   }
-  .classes {
-    width: auto;
-  }
-  h4 {
-    margin-bottom: 6rem !important;
-  }
 
+  /* Parents and Kids Classes */
   .hero-2,
   .kids-2 {
-    height: 300px;
+    width: 100%;
     margin-left: 0;
   }
-
   .know2 {
-    height: 290px;
+    width: 100%;
     margin-left: 0;
   }
   .parent {
-    height: 270px;
+    width: 100%;
     margin-left: 0;
   }
   hr {
     display: none;
   }
   .kids-2 {
-    margin-top: -53rem;
+   
     text-align: center;
+    
+  }
+  .kids-2 img {
+   object-fit: cover;
   }
   .kids-1 {
-    /* margin-top: 18rem; */
     text-align: center;
   }
   .kids-4 {
-    margin-top: 18rem;
+    
   }
   .know2 {
-    margin-top: -52rem;
+    
   }
   .kids-3,
   .kids-1 {
@@ -1006,36 +1012,30 @@ body {
     text-align: center;
   }
   .know-text {
-    margin-top: 25rem;
+    
   }
 
   /* Wifi */
-
   .wifi blockquote {
-    background: var(--yellow);
-    color: black;
+    background: var(--pink);
+    color: white;
     margin-left: 1rem;
     margin-right: 1rem;
-    padding-left: 1rem;
-    padding-right: 1rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
   }
 
   /* Instructor */
-
   .instructor-pic {
-    height: 300px;
+   
   }
   .instructor-text {
-    /* margin-bottom: 10rem; */
     padding: 0;
-    margin-top: 4rem;
     text-align: center;
   }
 
   /* Testimonials */
-
   .btn {
-    /* display: block; */
     text-align: center;
   }
   .testimonials h3 {
@@ -1043,12 +1043,16 @@ body {
   }
 
   /* Gallery */
-
   .gallery {
     background-color: white;
     text-align: center;
   }
-  /* Final */
+  .gallery-button a {
+    margin-top: 0;
+    margin-bottom: 2rem;
+  }
+
+  /* Final Section*/
   .final {
     margin-bottom: 4rem;
   }
@@ -1057,99 +1061,90 @@ body {
   footer {
     padding-bottom: 1rem;
   }
-
   footer ul {
     text-align: center;
     padding-top: 2rem;
     padding-bottom: 2rem;
   }
-}
+  iframe {
+    display: none;
+  }
 
-/* Hamburger Menu */
-.header ul li {
-  display: inline-block;
-}
-
-.header ul li a {
-  text-decoration: none;
-  color: black;
-  border-radius: 7px;
-  transition: all 0.3s ease;
-  display: flex;
-  justify-content: end;
-}
-
-#icon {
-  background-color: var(--pink);
-  padding: 5px 7px 3px 7px;
-  border-radius: 4px;
-  cursor: pointer;
-  transition: all 0.3s ease;
-}
-
-#icon svg {
-  color: white;
-  height: 28px;
-  transition: all 0.3s ease;
-}
-
-#icon:hover {
-  background: #fff;
-  content:'X';
-}
-
-#icon:hover svg {
-  color: var(--pink);
-}
-
-#checkbox,
-#icon {
-  display: none;
-}
-
-@media screen and (max-width: 768px) {
+  /* Hamburger Menu */
+  .desktop {
+    display: none;
+  }
+  .mobile {
+    display: block;
+  }
   .logo {
     width: 50px;
-    margin-top: 1rem;
+    margin-top: 0.5rem;
   }
-
-  .header ul {
-    position: absolute;
+  .header-top {
     width: 100%;
-    height: calc(100vh - 100px);
-    background-color: white;
-    left: 0;
-    top: 25px;
-    text-align: center;
-    display: none;
-    margin-top: 100px;
-    padding-top: 2rem;
   }
-
-  .header ul li {
-    display: block;
-    padding: 10px 15px;
-  }
-
-  .header ul li a,
-  .header ul li i {
-    display: block;
-    padding: 10px 0;
-    color: black;
-    font-size: 1.3rem;
-  }
-
-  #icon {
-    display: block;
-    margin-top: -10px;
-  }
-
-  #checkbox:checked ~ ul {
-    display: block;
-  }
-  .header {
-    margin: 0;
+  header {
     padding: 0;
-    vertical-align: middle;
   }
+  .nav-list li a {
+    color: white;
+  }
+  .nav-list ul li {
+    margin-bottom: 3rem;
+  }
+  .nav-list ul li i {
+    color: white;
+  }
+  .nav-list.show {
+    display: block;
+  }
+  .nav-list {
+    display: none;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--pink);
+    height: 100vh;
+    position: fixed;
+  }
+  .nav-list .header-top {
+    padding: 1rem 2rem;
+  }
+  .nav-list .nav-ul {
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.5rem;
+    flex-direction: column;
+    padding-top: 5rem;
+  }
+  .mobile-none {
+    display:none;
+  }
+  .mobile-show {
+    display: block;
+  }
+}
+
+@media only screen and (min-width: 767px) and (max-width: 956px) {
+  html {
+    font-size: 13px;
+  }
+  iframe {
+    width: 300px;
+  }
+  .soft,
+  .nurturing,
+  .loving,
+  .child-led {
+    margin-bottom: 1rem;
+    width: 100%;
+    border-radius: 10px;
+  }
+
 }
