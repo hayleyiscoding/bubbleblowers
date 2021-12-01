@@ -604,7 +604,7 @@ h5 strong {
   border-radius: 50%;
   width: 120%;
   object-fit: cover;
-  margin: 0;
+  padding: 3rem!important;
 }
 
 /* Did you know */
@@ -614,7 +614,7 @@ h5 strong {
   border-radius: 60%;
   width: 100%;
   object-fit: cover;
-  padding: 1rem;
+  
   margin-top: 3rem;
 }
 
