@@ -198,6 +198,9 @@ body {
 .justify-end {
   justify-content: flex-end;
 }
+.justify-evenly {
+  justify-content: space-evenly;
+}
 .align-start {
   align-items: flex-start;
 }
@@ -223,6 +226,9 @@ body {
 }
 .flex-30 {
   flex: 0 1 30%;
+}
+.flex-33 {
+  flex: 0 1 33%;
 }
 .flex-40 {
   flex: 0 1 40%;
@@ -376,7 +382,7 @@ header a {
   color: black;
 }
 .logo {
-  width: 100px;
+  width: 150px;
 }
 nav {
   display: flex;
@@ -406,6 +412,12 @@ nav {
 .hero-2 {
   background: url("../img/herocircleimg.jpeg") no-repeat center/contain;
   margin-left: 5rem;
+}
+
+/* Logos */
+
+.logos img {
+  max-width: 200px;
 }
 
 /* Blockquote */
@@ -487,6 +499,10 @@ i {
   width: 100%;
   object-fit: cover;
 }
+.little-ones li {
+  list-style-type: disc;
+  margin-left: 1.2rem;
+}
 .kids-3 {
   padding: 1rem 4rem;
 }
@@ -537,7 +553,7 @@ h5 strong {
 
 /* What Our Clients Say */
 .testimonials {
-  background: var(--green) url('../img/water.jpg') no-repeat center/cover;
+  background: var(--green) url("../img/water.jpg") no-repeat center/cover;
   margin-bottom: 4rem;
   border-radius: 5px;
 }
@@ -931,10 +947,16 @@ body {
   nav {
     padding-top: 2rem;
   }
+  .logos img {
+    max-width: 100px;
+    margin-bottom: 3rem;
+  }
 
   /* Hero */
   .hero-1 {
     text-align: center;
+    padding-bottom: 5rem;
+  
   }
 
   /* Happiness */
@@ -1001,16 +1023,15 @@ body {
   .kids-1 {
     text-align: center;
   }
-  .kids-4 {
-  }
-  .know2 {
-  }
+
   .kids-3,
   .kids-1 {
     padding: 0;
     text-align: center;
   }
-  .know-text {
+  .little-ones li {
+    list-style-type: none;
+    margin-left: none;
   }
 
   /* Wifi */
@@ -1024,8 +1045,6 @@ body {
   }
 
   /* Instructor */
-  .instructor-pic {
-  }
   .instructor-text {
     padding: 0;
     text-align: center;
@@ -1075,7 +1094,7 @@ body {
     display: block;
   }
   .logo {
-    width: 50px;
+    width: 100px;
     margin-top: 0.5rem;
   }
   .header-top {
@@ -1134,7 +1153,10 @@ body {
     font-size: 13px;
   }
   iframe {
-    max-width: 300px
+    max-width: 300px;
+  }
+  .menu {
+    font-size: 0.9rem;
   }
   .soft,
   .nurturing,
@@ -1143,6 +1165,7 @@ body {
     margin-bottom: 1rem;
     width: 100%;
   }
+
 }
 
 /* Ipad pro */
@@ -1150,7 +1173,4 @@ body {
   iframe {
     max-width: 400px;
   }
-
 }
-
-
