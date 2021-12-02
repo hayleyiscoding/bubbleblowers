@@ -363,6 +363,20 @@ p {
   font-size: 0.7rem;
   margin-top: 1rem;
 }
+/* Banner */
+.top-banner {
+  background-color: var(--pink);
+  color: white;
+  padding-top: 0.6rem;
+  padding-bottom: 0.6rem;
+  text-align: center;
+  font-size: 1.5rem;
+  margin-bottom:1rem;
+}
+.top-banner a {
+  color: var(--yellow);
+  cursor: pointer;
+}
 
 /* Main Navigation */
 header {
@@ -478,15 +492,13 @@ i {
   /* display: flex;
   justify-content: center;
   align-items: center; */
-  border-radius:10%;
-  
+  border-radius: 10%;
 }
 .kids-2 img {
   border-radius: 10%;
   width: 100%;
   object-fit: cover;
   margin-top: 3rem;
-
 }
 .parent {
   display: flex;
@@ -594,7 +606,6 @@ h5 strong {
 
 /* Happy babies*/
 .know {
-  
 }
 .kids-3 {
   padding: 0rem 0.5rem;
@@ -604,7 +615,7 @@ h5 strong {
   border-radius: 50%;
   width: 120%;
   object-fit: cover;
-  padding: 3rem!important;
+  padding: 3rem !important;
 }
 
 /* Did you know */
@@ -614,7 +625,7 @@ h5 strong {
   border-radius: 60%;
   width: 100%;
   object-fit: cover;
-  
+
   margin-top: 3rem;
 }
 
@@ -944,6 +955,10 @@ body {
     padding-bottom: 0;
   }
 
+  .top-banner {
+    font-size: 0.9rem;
+    margin-bottom: 0rem;
+  }
   /* Header */
   .fab {
     font-size: 2rem !important;
@@ -964,7 +979,6 @@ body {
   .hero-1 {
     text-align: center;
     padding-bottom: 5rem;
-  
   }
 
   /* Happiness */
@@ -1173,7 +1187,12 @@ body {
     margin-bottom: 1rem;
     width: 100%;
   }
-
+  header img {
+    max-width: 120px;
+  }
+  header .container {
+    padding-left: 0;
+  }
 }
 
 /* Ipad pro */
@@ -1181,4 +1200,5 @@ body {
   iframe {
     max-width: 400px;
   }
+  
 }
