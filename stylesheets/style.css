@@ -367,16 +367,26 @@ p {
 .top-banner {
   background-color: var(--pink);
   color: white;
-  padding-top: 0.6rem;
-  padding-bottom: 0.6rem;
+  padding-top: 0.7rem;
+  padding-bottom: 0.7rem;
   text-align: center;
-  font-size: 1.5rem;
-  margin-bottom:1rem;
+  font-size: 1.1rem;
+  margin-bottom:0.1rem;
 }
 .top-banner a {
   color: var(--yellow);
   cursor: pointer;
 }
+.top-banner h3 {
+		animation: blink 3s linear 4s 5;
+    padding-right: 0.3rem;
+}
+@keyframes blink{
+0%{opacity: 0;}
+50%{opacity: .5;}
+100%{opacity: 1;}
+}
+
 
 /* Main Navigation */
 header {
@@ -938,6 +948,10 @@ body {
     flex-wrap: wrap;
   }
 
+  .header .container {
+    padding-left: 2rem;
+  }
+
   /* Headings and Text*/
   h1 {
     font-size: 3rem;
@@ -956,8 +970,9 @@ body {
   }
 
   .top-banner {
-    font-size: 0.9rem;
+    font-size: 1rem;
     margin-bottom: 0rem;
+    padding: 2rem;
   }
   /* Header */
   .fab {
@@ -973,6 +988,12 @@ body {
   .logos img {
     max-width: 100px;
     margin-bottom: 3rem;
+  }
+  .logo{
+    padding-left: 2rem;
+  }
+  .header-top {
+    margin-top: 0.5rem;
   }
 
   /* Hero */

@@ -61,3 +61,25 @@ if (navUl) {
     }
   });
 }
+
+// Typewriter effect for banner
+
+let typewriterText = document.getElementById("typewriter")
+
+var i = 0;
+var txt = 'Registrations now open for 2022! 🥳 Contact us today.'; /* The text */
+var speed = 50; /* The speed/duration of the effect in milliseconds */
+
+function typeWriter() {
+  if (i < txt.length) {
+  typewriterText.innerHTML += txt.charAt(i);
+    i++;
+    setTimeout(typeWriter, speed);
+  }
+}
+
+window.addEventListener('load', (event) => {
+  typeWriter();
+})
+
+
