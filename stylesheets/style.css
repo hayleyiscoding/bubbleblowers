@@ -938,6 +938,15 @@ body {
   display: none;
 }
 
+/* Google Reviews */
+
+.google-reviews {
+  margin-bottom: 2rem;
+}
+.google-reviews img {
+  width: 100%;
+}
+
 /* For mobile phones: */
 @media only screen and (max-width: 767px) {
   html {
