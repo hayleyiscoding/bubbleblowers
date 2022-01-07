@@ -441,12 +441,17 @@ nav {
 .hero-2 {
   background: url("../img/herocircleimg.jpeg") no-repeat center/contain;
   margin-left: 5rem;
+  margin-top: -3rem;
 }
 
 /* Logos */
 
 .logos img {
   max-width: 200px;
+}
+.logos img:nth-of-type(1) {
+  max-width: 170px;
+  padding: 1rem; margin: 1rem
 }
 
 /* Blockquote */
@@ -1023,8 +1028,12 @@ body {
     max-width: 100px;
     margin-bottom: 3rem;
   }
-  .logos img:nth-of-type(3) {
-    max-width: 70px;
+  .logos img:nth-of-type(1) {
+    max-width: 90px;
+    padding: 0rem;
+    margin: 0rem;
+    margin-bottom: 3rem!important;
+    padding-right: 1rem;
   }
   .logo {
     padding-left: 2rem;
@@ -1082,6 +1091,9 @@ body {
   .kids-2 {
     width: 100%;
     margin-left: 0;
+  }
+  .hero-2 {
+    margin-top: 0;
   }
   .know2 {
     width: 100%;
