@@ -67,7 +67,7 @@ if (navUl) {
 let typewriterText = document.getElementById("typewriter")
 
 var i = 0;
-var txt = 'Registrations now open for 2024! 🥳 Contact us today.'; /* The text */
+var txt = 'Registrations now open for 2026! 🥳 Contact us today.'; /* The text */
 var speed = 50; /* The speed/duration of the effect in milliseconds */
 
 function typeWriter() {
